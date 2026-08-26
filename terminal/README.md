@@ -6,6 +6,10 @@ Generator for the animated terminal shown at the top of the profile README.
 itself — there are no intermediate frame files to manage, and nothing here is
 hand-edited after generation.
 
+The terminal keeps a scrollback buffer and renders only the tail that fits on
+screen, so output accumulates and older lines scroll off the top the way a real
+session behaves. The session is longer than the viewport by design.
+
 ## Requirements
 
 - Python 3.9 or newer
@@ -49,11 +53,20 @@ size of each asset.
 Two places in `generate_terminal.py` cover almost every change:
 
 - **`CONFIGURATION`** — dimensions, palette, font size, line height, typing
-  speed, cursor blink rate, GIF palette size.
-- **`build_script()`** — the animation content itself, written as a short
-  sequence of calls (`type_command`, `status`, `line`, `blank`, `hold`). Add a
-  command or change the project list by editing this function; timing follows
-  from the `hold()` values around it.
+  speed, cursor blink rate, GIF palette size, and the column positions
+  (`RIGHT_EDGE`, `COL_ROLE`, `COL_DOMAIN`, `COL_STACK`) that everything aligns
+  against.
+- **`CONTENT`** — the profile data itself: `BOOT`, `IDENTITY`, `EXPERIENCE`,
+  `PROJECTS`, `STACK`. Editing a company, role, date, project, or technology
+  means editing a tuple here and nothing else.
+
+`build_session()` sets the order commands run in, and `mark_static()` picks
+which screen becomes the fallback PNG. The line builders (`experience_head`,
+`project_detail`, ...) turn content tuples into aligned coloured spans; they are
+the only place layout maths lives.
+
+Commands animate character by character. Output prints a line at a time, much
+faster — that contrast is what makes the session feel real.
 
 Frames are emitted with individual durations rather than at a fixed frame rate,
 so a long pause costs one or two frames instead of thirty. Every frame is
