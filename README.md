@@ -1,57 +1,23 @@
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/terminal-static.png">
-  <img src="./assets/terminal.gif" alt="Terminal session for Mohit Manna: connects, runs whoami to show Computer Engineering at Purdue graduating Dec 2027, then experience --timeline listing internships at IBM, Handshake, Caterpillar, and a stealth AI startup, then projects --featured listing pulsekv, tessera, fintrak, and personal-portfolio, then env --stack listing the technology stack.">
-</picture>
+# Mohit Manna
 
-## `$ whoami`
+Computer Engineering @ Purdue.
 
-Computer Engineering at Purdue, graduating Dec 2027. I build close to the
-machine — currently a KV cache for LLM inference with a C storage core and a Go
-control plane running Raft. Most of what I care about is what systems do under
-load and how they fail.
+### systems
 
-## `$ ps --projects`
+[pulsekv](https://github.com/MohitManna-2006/pulsekv) — distributed KV cache for LLM serving, with a C data plane and Go/Raft control plane
 
-**[pulsekv](https://github.com/MohitManna-2006/pulsekv)** · `distributed systems`<br>
-Sharded KV store for LLM inference. C core on `epoll`, Go control plane running
-Raft, Python adapters for SGLang and vLLM.
+[AegisFeed](https://github.com/MohitManna-2006/AegisFeed) — C++20 market-data feed with packet-loss recovery and deterministic replay
 
-**[tessera](https://github.com/MohitManna-2006/tessera)** · `developer tooling`<br>
-Turns your repos and résumé into a portfolio you can actually deploy. Next.js,
-server-side PDF extraction, deterministic export.
+### developer tools
 
-**[fintrak](https://github.com/MohitManna-2006/fintrak)** · `applied ai`<br>
-Finance tracker with an LLM in the loop. Next.js on Prisma and Postgres, shared
-rooms, streaming spend analysis.
+[tessera](https://github.com/MohitManna-2006/tessera) — turns resumes and GitHub projects into deployable developer portfolios
 
-**[personal-portfolio](https://github.com/MohitManna-2006/personal-portfolio)** · `web`<br>
-Portfolio built as a technical artifact, not a résumé dump. Next.js, TypeScript,
-Tailwind.
+### applied
 
-## `$ cat experience.log`
+[fintrak](https://github.com/MohitManna-2006/fintrak) — personal finance platform with streaming analysis and LLM tooling
 
-```
-IBM                 Software Engineer Intern   May – Aug 2026
-Handshake           AI Engineer                Jan – Apr 2026
-Caterpillar         Machine Learning Intern    Aug – Dec 2025
-Stealth AI Startup  Software Engineer Intern   Jun – Aug 2025
+### other
 
-Purdue University · BS Computer Engineering · Dec 2027
-Minors in Math and Finance
-```
+[personal-portfolio](https://github.com/MohitManna-2006/personal-portfolio) — personal site
 
-## `$ env`
-
-```
-languages  Python · TypeScript · C · C++ · Go · Java · SQL
-systems    Linux · epoll · Raft · gRPC · concurrency
-backend    FastAPI · Node.js · Express · PostgreSQL · Redis
-ai         PyTorch · vLLM · RLHF · pgvector
-infra      Docker · Kubernetes · AWS · Azure
-web        React · Next.js · GraphQL · Tailwind
-tooling    Git · GitHub Actions · OpenTelemetry
-```
-
-## `$ ping --contact`
-
-[Portfolio](https://tinyurl.com/mohit542) · [LinkedIn](https://linkedin.com/in/mohit542) · [Email](mailto:mannamohit542@gmail.com) · [GitHub](https://github.com/MohitManna-2006)
+[website](https://tinyurl.com/mohit542) · [linkedin](https://linkedin.com/in/mohit542) · [email](mailto:mannamohit542@gmail.com)
