@@ -11,9 +11,9 @@ Computer Engineering @ Purdue.
 
 ### Quantitative Finance
 
-[MarketTwin](https://github.com/MohitManna-2006/MarketTwin): C++20 deterministic equity-market simulator, price-time matching, trading agents, double-entry accounting and paired experiments
+[MarketTwin](https://github.com/MohitManna-2006/MarketTwin): C++20 equity-market simulator, price-time matching, trading agents, and paired experiments
 
-[Sum100](https://github.com/MohitManna-2006/Sum100): Rust prediction-market arbitrage engine, live Kalshi order books, constraint-based pricing, fee-aware execution and exact replay
+[Sum100](https://github.com/MohitManna-2006/Sum100): Rust prediction-market arbitrage engine, live Kalshi order books, constraint-based pricing, fee-aware execution
 
 ### Machine Learning
 
