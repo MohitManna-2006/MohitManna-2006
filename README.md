@@ -1,6 +1,6 @@
 # Mohit Manna
 
-Computer Engineering @ Purdue University.
+Incoming @ Millennium | Purdue
 
 ### Low-Level Systems & Infrastructure
 
