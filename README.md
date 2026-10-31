@@ -1,7 +1,5 @@
 # Mohit Manna
 
-Incoming @ Millennium | Purdue
-
 ### Low-Level Systems & Infrastructure
 
 - [IRONBUS](https://github.com/MohitManna-2006/IRONBUS): C++20 shared-memory IPC bus for low-latency communication between processes, exploring atomic ring buffers, backpressure, and crash recovery.
